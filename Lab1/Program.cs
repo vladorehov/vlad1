@@ -6,115 +6,52 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("введите число");
-            int number = 0;
-            while (true)
-            {
-                string str = Console.ReadLine();
-                bool res = int.TryParse(str, out number);
-                if (res == true)
-                {
-                    if ((number >= 1) && (number <= 7))
 
-                    {
-                        switch (number)
-                        {
-                            case 1:
-                                Console.WriteLine("понедельник");
-                                break;
-                            case 2:
-                                Console.WriteLine("вторник");
-                                break;
-                            case 3:
-                                Console.WriteLine("среда");
-                                break;
-                            case 4:
-                                Console.WriteLine("четверг");
-                                break;
-                            case 5:
-                                Console.WriteLine("пятница");
-                                break;
-                            case 6:
-                                Console.WriteLine("суббота");
-                                break;
-                            case 7:
-                                Console.WriteLine("воскресенье");
-                                break;
-                        }
-                        if (number == 1)
-                        {
-                            Console.WriteLine("понедельник");
-                        }
-                        if (number == 2)
-                        {
-                            Console.WriteLine("вторник");
-                        }
-                        if (number == 3)
-                        {
-                            Console.WriteLine("среда");
-                        }
-                        if (number == 4)
-                        {
-                            Console.WriteLine("четверг");
-                        }
-                        if (number == 5)
-                        {
-                            Console.WriteLine("пятница");
-                        }
-                        if (number == 6)
-                        {
-                            Console.WriteLine("суббота");
-                        }
-                        if (number == 7)
-                        {
-                            Console.WriteLine("воскресенье");
-                        }
-                    }
-                    else Console.WriteLine("ошибка");
+            int a = 2; int b = 3; int c = 15;
+            double p1 = Math.Sqrt((Math.Pow(a, 2) - Math.Pow(b, 3)) / Math.Sqrt(Math.Pow(b, 4) - Math.Pow(a, 4)) + Math.Abs(Math.Pow(b, 5) - Math.Pow(c, 2.5)));
 
-                }
-                else Console.WriteLine("ошибка");
-                break;
-            }
-            // Задание 2
-            Console.WriteLine("введите число");
-            int num = 10;
-            if ((num % 3 == 0) && (num % 5 == 0))
-            {
-                Console.WriteLine("BuzzFizz");
-            }
-            else if (num % 3 == 0)
-            {
-                Console.WriteLine("Buzz");
-            }
-            else if (num % 5 == 0)
-            {
-                Console.WriteLine("Fizz");
-            }
-            // Задание 3
 
-            Console.WriteLine("Введите первое число");
-            int a1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите второе число");
-            int b1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите знак");
-            string z1 = Console.ReadLine();
-            if (z1 == "+")
-            {
-                Console.WriteLine(a1 + b1);
-            }
-            if (z1 == "-")
-            {
-                Console.WriteLine(a1 - b1);
-            }
-            if (z1 == "*")
-            {
-                Console.WriteLine(a1 * b1);
-            }
-            if (z1 == "/")
-            {
-                Console.WriteLine(a1 / b1);
-            }
+            Console.WriteLine(p1);
+
+            // задание №2
+
+            Random rnd = new Random();
+            int d = rnd.Next();
+            int e = rnd.Next();
+            double f = Math.Pow(d, 2) + Math.Pow(e, 1 / 3) / (d + e);
+
+            Console.WriteLine();
+            Console.WriteLine(f);
+
+            // задание №3
+
+            double g = 5.93576;
+            int h = (int)g;
+            int q = (int)(Math.Round(g));
+            int w = (int)(Math.Floor(g));
+            double t = Math.Round(g, 1);
+            int y = 5;
+
+
+            Console.WriteLine();
+            Console.WriteLine(q);
+            Console.WriteLine();
+            Console.WriteLine(w);
+            Console.WriteLine();
+            Console.WriteLine(t);
+            Console.WriteLine();
+            Console.WriteLine(y++);
+            Console.WriteLine();
+            Console.WriteLine(++y);
+
+            // задание 4
+
+            Random rnd1 = new Random();
+            int i = rnd1.Next(0, 1000);
+
+
+            Console.WriteLine();
+            Console.WriteLine(i);
 
         }
     }
