@@ -4,7 +4,7 @@ namespace Lab1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             int a = 2; int b = 3; int c = 15;
