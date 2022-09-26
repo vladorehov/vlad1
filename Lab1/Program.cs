@@ -92,6 +92,7 @@ namespace Lab1
             {
                 Console.WriteLine("Fizz");
             }
+
             // Задание 3
 
             Console.WriteLine("Введите первое число");
