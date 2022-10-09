@@ -4,7 +4,7 @@ namespace Lab1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             Console.WriteLine("введите число");
