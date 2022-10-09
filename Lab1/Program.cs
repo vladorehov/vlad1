@@ -4,10 +4,11 @@ namespace Lab1
 {
     class Program
     {
-        static void Main( )
+        static void Main()
         {
             //zadanie 1
             //while
+
             int num = 0, ost_d5;
             while (num <= 100)
             {
