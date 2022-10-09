@@ -4,7 +4,7 @@ namespace Lab1
 {
     class Program
     {
-        static void Main()
+        static void Main( )
         {
             //zadanie 1
             //while
