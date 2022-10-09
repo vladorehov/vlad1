@@ -4,73 +4,54 @@ namespace Lab1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-
-            int a = 2; int b = 3; int c = 15;
-            double p1 = Math.Sqrt((Math.Pow(a, 2) - Math.Pow(b, 3)) / Math.Sqrt(Math.Pow(b, 4) - Math.Pow(a, 4)) + Math.Abs(Math.Pow(b, 5) - Math.Pow(c, 2.5)));
-
-
-            Console.WriteLine(p1);
-
-            // задание №2
-
-            Random rnd = new Random();
-            int d = rnd.Next();
-            int e = rnd.Next();
-            double f = Math.Pow(d, 2) + Math.Pow(e, 1 / 3) / (d + e);
-
-            Console.WriteLine();
-            Console.WriteLine(f);
-
-            // задание №3
-
-            double g = 5.93576;
-            int h = (int)g;
-            int q = (int)(Math.Round(g));
-            int w = (int)(Math.Floor(g));
-            double t = Math.Round(g, 1);
-            int y = 5;
-
-
-            Console.WriteLine();
-            Console.WriteLine(q);
-            Console.WriteLine();
-            Console.WriteLine(w);
-            Console.WriteLine();
-            Console.WriteLine(t);
-            Console.WriteLine();
-            Console.WriteLine(y++);
-            Console.WriteLine();
-            Console.WriteLine(++y);
-
-            // задание 4
-
-            Random rnd1 = new Random();
-            int i = rnd1.Next(0, 1000);
-
+            //zadanie 1
+            //while
+            int num = 0, ost_d5;
+            while (num <= 100)
+            {
+                num++;
+                ost_d5 = num % -5;
+                if (ost_d5 == 0)
+                {
+                    Console.WriteLine(num);
                 }
-                else Console.WriteLine("ошибка");
-                break;
             }
-            // Задание 2
-            Console.WriteLine("введите число");
-            int num = 10;
-            if ((num % 3 == 0) && (num % 5 == 0))
+            //do while
+            int num2 = 0, ost2_d5;
+            do
             {
-                Console.WriteLine("BuzzFizz");
+                num2++;
+                ost2_d5 = num2 % -5;
+                if (ost2_d5 == 0)
+                {
+                    Console.WriteLine(num2);
+                }
             }
-            else if (num % 3 == 0)
+            while (num2 <= 100);
+            //for
+            int ost3_d5, num3;
+            for (num3 = 0; num3 <= 100; num3++)
             {
-                Console.WriteLine("Buzz");
+                ost3_d5 = num3 % -5;
+                if (ost3_d5 == 0 && num3 != 0)
+                {
+                    Console.WriteLine(num3);
+                }
             }
-            else if (num % 5 == 0)
+            //zadanie 2
+            int chi = 0, summa = 0;
+            while (chi <= 30)
             {
-                Console.WriteLine("Fizz");
+                int nc = chi % 2;
+                chi++;
+                if (nc == 0)
+                {
+                    summa += chi;
+                }
             }
-
-            // Задание 3
-
+            Console.WriteLine("summa= " + summa);
         }
     }
 }
