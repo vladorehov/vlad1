@@ -4,7 +4,7 @@ namespace Lab1
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
 
             int a = 2; int b = 3; int c = 15;
@@ -49,9 +49,27 @@ namespace Lab1
             Random rnd1 = new Random();
             int i = rnd1.Next(0, 1000);
 
+                }
+                else Console.WriteLine("ошибка");
+                break;
+            }
+            // Задание 2
+            Console.WriteLine("введите число");
+            int num = 10;
+            if ((num % 3 == 0) && (num % 5 == 0))
+            {
+                Console.WriteLine("BuzzFizz");
+            }
+            else if (num % 3 == 0)
+            {
+                Console.WriteLine("Buzz");
+            }
+            else if (num % 5 == 0)
+            {
+                Console.WriteLine("Fizz");
+            }
 
-            Console.WriteLine();
-            Console.WriteLine(i);
+            // Задание 3
 
         }
     }
