@@ -6,117 +6,51 @@ namespace Lab1
     {
         static void Main()
         {
+            //zadanie 1
+            int[] mass = new int[13];
 
-            Console.WriteLine("введите число");
-            int number = 0;
-            while (true)
+            Random rnd = new Random();
+            for (int i = 0; i < mass.Length; i++)
             {
-                string str = Console.ReadLine();
-                bool res = int.TryParse(str, out number);
-                if (res == true)
+                mass[i] = rnd.Next(0, 100);
+                Console.Write(mass[i] + "\t");
+            }
+            Console.WriteLine();
+            //zadanie 2
+            string str = "awd 23 f 4 rg3 3";
+            string[] strraz = str.Split(' ');
+            foreach (string el in strraz)
+            {
+                Console.WriteLine(el);
+            }
+            //zadanie 3
+            Console.Write("ВВедите размерновсть массива n=");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] mas = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("введите элемент массива mas[{0}]=", i);
+                mas[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Сортировака массива
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - 1; j++)
                 {
-                    if ((number >= 1) && (number <= 7))
-
+                    if (mas[j] > mas[j + 1])
                     {
-                        switch (number)
-                        {
-                            case 1:
-                                Console.WriteLine("понедельник");
-                                break;
-                            case 2:
-                                Console.WriteLine("вторник");
-                                break;
-                            case 3:
-                                Console.WriteLine("среда");
-                                break;
-                            case 4:
-                                Console.WriteLine("четверг");
-                                break;
-                            case 5:
-                                Console.WriteLine("пятница");
-                                break;
-                            case 6:
-                                Console.WriteLine("суббота");
-                                break;
-                            case 7:
-                                Console.WriteLine("воскресенье");
-                                break;
-                        }
-                        if (number == 1)
-                        {
-                            Console.WriteLine("понедельник");
-                        }
-                        if (number == 2)
-                        {
-                            Console.WriteLine("вторник");
-                        }
-                        if (number == 3)
-                        {
-                            Console.WriteLine("среда");
-                        }
-                        if (number == 4)
-                        {
-                            Console.WriteLine("четверг");
-                        }
-                        if (number == 5)
-                        {
-                            Console.WriteLine("пятница");
-                        }
-                        if (number == 6)
-                        {
-                            Console.WriteLine("суббота");
-                        }
-                        if (number == 7)
-                        {
-                            Console.WriteLine("воскресенье");
-                        }
+                        int tmp = mas[j];
+                        mas[j] = mas[j + 1];
+                        mas[j + 1] = tmp;
                     }
-                    else Console.WriteLine("ошибка");
-
                 }
-                else Console.WriteLine("ошибка");
-                break;
             }
-            // Задание 2
-            Console.WriteLine("введите число");
-            int num = 10;
-            if ((num % 3 == 0) && (num % 5 == 0))
+            //вывод массива на экран
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("BuzzFizz");
+                Console.WriteLine("элемент массива mas[{0}]={1}", i, mas[i]);
             }
-            else if (num % 3 == 0)
-            {
-                Console.WriteLine("Buzz");
-            }
-            else if (num % 5 == 0)
-            {
-                Console.WriteLine("Fizz");
-            }
-
-            // Задание 3
-
-            Console.WriteLine("Введите первое число");
-            int a1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите второе число");
-            int b1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите знак");
-            string z1 = Console.ReadLine();
-            if (z1 == "+")
-            {
-                Console.WriteLine(a1 + b1);
-            }
-            if (z1 == "-")
-            {
-                Console.WriteLine(a1 - b1);
-            }
-            if (z1 == "*")
-            {
-                Console.WriteLine(a1 * b1);
-            }
-            if (z1 == "/")
-            {
-                Console.WriteLine(a1 / b1);
-            }
+            System.Console.ReadKey();
         }
     }
 }
