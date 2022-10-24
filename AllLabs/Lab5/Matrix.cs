@@ -8,7 +8,7 @@ namespace AllLabs.Lab5
     {
         private int _stroki;
         private int _stolbi;
-        private int[,] _massiv;
+        private int[, ] _massiv;
 
         public Matrix(int stroki, int stolbi)
         {

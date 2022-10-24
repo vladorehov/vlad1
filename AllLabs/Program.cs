@@ -56,7 +56,7 @@ namespace Lab1
         /// </summary>
         /// <param name="labs"></param>
         /// <param name="id"></param>
-        static void Demo(List<ILabs> labs, string id)
+        static void Demo( List<ILabs> labs, string id)
         {
             try
             {
