@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Lab1
 {
-    class Program
+    public class Lab2 : ILabs
     {
-        static void Main()
+        /// <summary>
+        /// Метод демонстрации всех заданий лабораторной работы
+        /// </summary>    
+        public void Demo()
         {
-
+            // Console.WriteLine("Демо");
+            // ход лабы
             Console.WriteLine("введите число");
             int number = 0;
             while (true)
@@ -92,7 +98,6 @@ namespace Lab1
             {
                 Console.WriteLine("Fizz");
             }
-
             // Задание 3
 
             Console.WriteLine("Введите первое число");
@@ -117,6 +122,35 @@ namespace Lab1
             {
                 Console.WriteLine(a1 / b1);
             }
+
+        }
+
+        /// <summary>
+        /// Метод возвращает описание заданий лабораторной работы
+        /// </summary>
+        /// <returns></returns>
+        /// <returns>Описание лабы</returns>
+        public string Description()
+        {
+            return "Задание 2";
+        }
+        /// <summary>
+        /// Метод возвращает номер лабораторной работы
+        /// </summary>
+        /// <returns>Номер лабы</returns>
+        public int Id()
+        {
+            return 2;
+        }
+
+        /// <summary>
+        /// Метод возвращает заголовок лабораторной работы
+        /// </summary>
+        /// <returns></returns>
+        public string Name()
+        {
+            return "Лабораторная №2.  Тема: свич кейс и условия";
         }
     }
 }
+
