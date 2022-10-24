@@ -52,7 +52,7 @@ namespace Lab1
             Console.WriteLine();
             //zadanie 2
             int chi = 0, summa = 0;
-            while (chi <= 30)
+            while (chi < 30)
             {
                 int nc = chi % 2;
                 chi++;
@@ -72,7 +72,7 @@ namespace Lab1
         /// <returns>Описание лабы</returns>
         public string Description()
         {
-            return "Задания опять у Жданова";
+            return "Задании 3";
         }
         /// <summary>
         /// Метод возвращает номер лабораторной работы

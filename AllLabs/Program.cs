@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AllLabs.Lab5;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,6 +15,9 @@ namespace Lab1
             labs.Add(new Lab2());           // потом сделаем автоматически!
             labs.Add(new Lab3());
             labs.Add(new Lab4());
+            labs.Add(new Lab5());
+            labs.Add(new Lab6());
+
 
             LabsInfo(labs);                 // выводим информацию о всех лабах
 

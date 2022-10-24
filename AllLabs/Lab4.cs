@@ -67,7 +67,7 @@ namespace Lab1
         /// <returns>Описание лабы</returns>
         public string Description()
         {
-            return "Задание как всегда у Жданова";
+            return "Задание 4";
         }
         /// <summary>
         /// Метод возвращает номер лабораторной работы
