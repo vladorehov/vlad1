@@ -44,7 +44,7 @@ namespace AllLabs.Lab5
         /// Метод возвращает номер лабораторной работы
         /// </summary>
         /// <returns>Номер лабы</returns>
-        public int Id()
+        public int Id( )
         {
             return 5;
         }
