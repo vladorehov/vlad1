@@ -132,7 +132,7 @@ namespace Lab1
         /// <returns>Описание лабы</returns>
         public string Description()
         {
-            return "Задание 2";
+            return "Задание 2 ";
         }
         /// <summary>
         /// Метод возвращает номер лабораторной работы

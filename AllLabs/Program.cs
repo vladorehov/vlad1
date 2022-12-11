@@ -17,6 +17,7 @@ namespace Lab1
             labs.Add(new Lab4());
             labs.Add(new Lab5());
             labs.Add(new Lab6());
+            labs.Add(new Lab7());
 
 
             LabsInfo(labs);                 // выводим информацию о всех лабах
@@ -56,7 +57,7 @@ namespace Lab1
         /// </summary>
         /// <param name="labs"></param>
         /// <param name="id"></param>
-        static void Demo(List<ILabs> labs, string id)
+        static void Demo( List<ILabs> labs, string id)
         {
             try
             {

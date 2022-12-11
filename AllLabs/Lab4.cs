@@ -61,11 +61,11 @@ namespace Lab1
         }
 
         /// <summary>
-        /// Метод возвращает описание заданий лабораторной работы
+        /// Метод возвращает описание заданий лабораторной работы 
         /// </summary>
         /// <returns></returns>
         /// <returns>Описание лабы</returns>
-        public string Description()
+        public string Description( )
         {
             return "Задание 4";
         }
